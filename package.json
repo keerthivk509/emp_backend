@@ -1,0 +1,32 @@
+{
+  "name": "node_api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "makemigrations": "sequelize-cli migration:generate ",
+    "start:test": "dotenv -e .env.test pm2 start pm2.config.js",
+    "migrate": "npx sequelize-cli db:migrate",
+    "seed": "npx sequelize-cli db:seed:all"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "http-errors": "^2.0.0",
+    "jade": "^1.11.0",
+    "joi": "^17.9.1",
+    "jsonwebtoken": "^9.0.0",
+    "logger": "^0.0.1",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.2.0",
+    "node": "^19.8.1",
+    "nodemailer": "^6.9.1",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7",
+    "sequelize": "^6.29.3"
+  }
+}
